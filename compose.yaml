@@ -11,4 +11,4 @@ services:
       - '--collation-server=utf8mb4_unicode_ci'
     environment:
       MYSQL_ROOT_PASSWORD: Mtltmxpa123
-      MYSQL_DATABASE: madalin-operation
+      MYSQL_DATABASE: mandalin-operation

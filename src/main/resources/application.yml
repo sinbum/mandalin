@@ -3,7 +3,7 @@ spring:
     name: mandalin
 
   datasource:
-    url: jdbc:mysql://localhost:3306/madalin-operation
+    url: jdbc:mysql://localhost:3306/mandalin-operation
     username: root
     password: Mtltmxpa123
     driver-class-name: com.mysql.cj.jdbc.Driver
