@@ -28,7 +28,7 @@ public class RootController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<RootDtoRequest> getRootById(@PathVariable Long id) {
+    public ResponseEntity<RootDtoRequest> getRootById(@PathVariable("id") Long id) {
         Root root = rootService.findRootById(id);
 
         return ResponseEntity.ok()
@@ -51,7 +51,7 @@ public class RootController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteRoot(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteRoot(@PathVariable("id") Long id) {
         rootService.deleteRoot(id);
         return ResponseEntity.ok().build();
     }
