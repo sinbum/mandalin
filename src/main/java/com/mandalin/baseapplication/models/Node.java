@@ -1,5 +1,6 @@
 package com.mandalin.baseapplication.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import lombok.Builder;
@@ -27,6 +28,7 @@ public class Node {
 
     @ManyToOne
     @JoinColumn(name = "rootId", nullable = false)
+    @JsonBackReference
     private Root root;
 
     @Column(nullable = false)
